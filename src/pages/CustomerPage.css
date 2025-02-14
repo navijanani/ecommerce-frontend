@@ -1,0 +1,49 @@
+.customer-page {
+  padding: 1rem;
+}
+
+.customer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.category-filter {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-price,
+.product-description {
+  margin-top: 0.5rem;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  margin-top: 0.5rem;
+}

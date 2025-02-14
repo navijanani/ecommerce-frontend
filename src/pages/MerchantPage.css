@@ -1,0 +1,83 @@
+.merchant-page {
+  padding: 1rem;
+}
+
+.merchant-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.add-category,
+.add-product {
+  margin-bottom: 1rem;
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.add-button {
+  background-color: #38bdf8;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.category-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-price,
+.product-description {
+  margin-top: 0.5rem;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
