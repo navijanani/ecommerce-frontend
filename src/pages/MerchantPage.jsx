@@ -16,7 +16,7 @@ function MerchantPage() {
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/categories");
+      const res = await axios.get("https://ecommerce-api-g0ul.onrender.com/api/categories");
       setCategories(res.data);
     } catch (error) {
       console.error("Error fetching categories:", error);
@@ -25,7 +25,7 @@ function MerchantPage() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get("https://ecommerce-api-g0ul.onrender.com/api/products");
       setProducts(res.data);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -36,7 +36,7 @@ function MerchantPage() {
     if (categories.length >= 4) return alert("Only 4 categories allowed!");
 
     try {
-      await axios.post("http://localhost:5000/api/categories", { name: newCategory });
+      await axios.post("https://ecommerce-api-g0ul.onrender.com/api/categories", { name: newCategory });
       fetchCategories();
       setNewCategory("");
     } catch (error) {
@@ -46,7 +46,7 @@ function MerchantPage() {
 
   const deleteCategory = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/categories/${id}`);
+      await axios.delete(`https://ecommerce-api-g0ul.onrender.com/api/categories/${id}`);
       fetchCategories();
       fetchProducts();
     } catch (error) {
@@ -63,7 +63,7 @@ function MerchantPage() {
     }
 
     try {
-        await axios.post("http://localhost:5000/api/products", {
+        await axios.post("https://ecommerce-api-g0ul.onrender.com/api/products", {
             name: newProduct.name,
             price: newProduct.price,
             description: newProduct.description, // Ensure this is sent

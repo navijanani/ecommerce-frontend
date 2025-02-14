@@ -14,7 +14,7 @@ function CustomerPage() {
 
   const fetchCategories = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/categories");
+      const res = await axios.get("https://ecommerce-api-g0ul.onrender.com/api/categories");
       setCategories(res.data);
     } catch (error) {
       console.error("Error fetching categories:", error);
@@ -23,7 +23,7 @@ function CustomerPage() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get("https://ecommerce-api-g0ul.onrender.com/api/products");
       const productsWithCategoryId = res.data.map(product => ({
         ...product,
         category_id: product.category_id || product.category // Ensure category_id is set
@@ -36,7 +36,7 @@ function CustomerPage() {
 
   const deleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`);
+      await axios.delete(`https://ecommerce-api-g0ul.onrender.com/api/products/${id}`);
       setProducts(products.filter((product) => product._id !== id));
     } catch (error) {
       console.error("Error deleting product:", error.response?.data || error.message);

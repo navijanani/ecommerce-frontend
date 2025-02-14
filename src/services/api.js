@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL:  "http://localhost:5000/api" ,  // Ensure this is correct
+    baseURL:  "https://ecommerce-api-g0ul.onrender.com/api" ,  // Ensure this is correct
     headers: {
         "Content-Type": "application/json",
     },
